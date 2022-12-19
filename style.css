@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Gruppo&family=Zen+Dots&display=swap');
+
+body{
+    background-color: #0E0106;
+    position: absolute;
+    color: white
+}
+
+.bg_main{
+    background-color: #100308;
+    position: relative;
+    width: 1194px;
+    left: 97px;
+    top: 0px;
+}
+
+.container_menu{
+    padding-bottom: 12px;
+    margin: 0 150px;
+    font-family: 'Gruppo';
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.1);
+
+}
+
+.logo_upgrader{
+    margin-right: 160px;
+}
+
+.lista_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 130px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+.lista_menu a{
+    text-decoration: none;
+    color: #D32E69;
+}
+
+main{
+    margin: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.09fr 1fr 1fr 0.8fr .2fr;
+    grid-template-areas:
+        "p p p p"
+        "atrib car car car"
+        "atrib car car car"
+        "atrib lgm lgm lgm"
+        "ft ft ft ft";
+}
+
+.points{
+    grid-area: p;
+    display: flex;
+    gap: 17px;
+    padding: 0 0px 20px 50px;
+    font-family: 'Comfortaa';
+}
+
+.atributos{
+    font-family: 'Comfortaa';
+    grid-area: atrib;
+    align-content: space-around;
+    border: 2px solid rgba(233, 66, 126, 0.5);
+    border-radius: 8px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+}
+
+.valor_atributos{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.num_atributo{
+    background: transparent;
+    border: transparent;
+    width: 20px;
+    color: white;
+    font-family: 'Comfortaa';
+    font-size: 15px;
+}
+.btn_add{
+    height: 2em;
+    width: 4em;
+    background-color: transparent;
+    background-image: url(img/add_circle_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.btn_remove{
+    height: 2em;
+    width: 4em;
+    background-color: transparent;
+    background-image: url(img/remove_circle_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+}
+
+.carro{
+    font-family: 'Zen Dots';
+    grid-area: car;
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+}
+
+.titulo_carro{
+    text-align: right;
+    margin: 0 3em 0 0em;
+    font-size: 24px;
+    background-color: #F0F1F3;
+    color: black;
+    width: 302px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.img_carro{
+    width: 700px;
+    right: 12%;
+    top: 17%;
+    position: absolute;
+}
+
+.logo_marca{
+    grid-area: lgm;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url();
+}
+
+.logo_marca img{
+    width: 35%;
+}
+
+.ficha_tecnica{
+    font-family: 'Zen Dots';
+    grid-area: ft;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    height: 95px;
+    margin: 30px 90px;
+}
+
+.lista_tecnica{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.container_footer{
+    display: flex;
+    background-color: #330214;
+    color: white;
+    font-family: 'Comfortaa';
+
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    font-size: 18px;
+    align-self: center;
+}
+
+.titulo_footer p{
+    text-transform: uppercase;
+}
+
+.container_footer img{
+    padding: 2em;
+}
+
+.descricao_footer{
+    font-size: 14px;
+    padding-right: 150px;
+}
+
+.redes_sociais{
+    font-size: 14px;
+    align-self: center;
+    margin-right: 109px;
+}
+
+.redes_sociais a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
