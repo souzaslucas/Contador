@@ -24,13 +24,13 @@
         <main>
             <div class="points">
                 <p class="pontos_nome" id="pontos_nome">Points</p>
-                <p class="pontos_num" id="pontos_num">80.0</p>
+                <input type="text" class="point_atributo" value="80" id="pontos_carro" maxlength="80" minlength="0">
             </div>
             <section class="atributos">
                 <p class="nome_atributo">Top Speed</p>
                     <div class="valor_atributos">
                         <button id="btn_atributos" class="btn_add" alt="add"></button>
-                        <input type="text" class="num_atributo" value="0" id="top_speed">
+                        <input type="text" class="num_atributo" value="0" id="top_speed" maxlength="80" minlength="00" >
                         <button id="btn_atributos" class="btn_remove" ></button>
                     </div>
                 <p class="nome_atributo">Durability</p>
@@ -96,5 +96,6 @@
 
 
 <script src="js/script.js"></script>
+<script src="js/points.js"></script>
 </body>
 </html>

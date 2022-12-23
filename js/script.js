@@ -1,5 +1,6 @@
 
 var controle = document.querySelectorAll("#btn_atributos") // Criei um arrey com todos os btns //
+var inputPoints = document.querySelector(".point_atributo")
 
 controle.forEach((elemento) =>{
     elemento.addEventListener('click', (eventoAcontecido) =>{
@@ -7,23 +8,24 @@ controle.forEach((elemento) =>{
 Add um escutador, esperando um clique para registrar o evento e executar a funcao "() =>"
 ao colocar o parametro "eventoAcontecido" e dar um console.log eu consigo saber qual foi o evento e as informacoes. 
 Dentro deste eventoAcontecido eu tenho a informacao do "target" que é o registro do elemento que recebeu o click. 
-*/
-        //var altDotarget = eventoAcontecido.target.alt //dentro do "target" eu busco o elemento alt especifico do botão que está sofrendo a ação //
-        //var paiDoElementoClicado = eventoAcontecido.target.parentNode //busquei o "pai" do botão clicado.//
-        manipulaDados(eventoAcontecido.target.className, eventoAcontecido.target.parentNode)
-        //console.log(eventoAcontecido.target.className)
-    }) 
+*/  
+         manipulaDados(eventoAcontecido.target.className, eventoAcontecido.target.parentNode) 
+       
+     }) 
 
 }) 
 
 function manipulaDados(conteudo, elementoPai){
     var elmnt = elementoPai.querySelector(".num_atributo") //busquei a classe do input APENAS dentro do elemento pai e não no documento todo.//
+
     //console.log(elementoPai)
     //console.log(conteudo)
    
-     if (conteudo === 'btn_add'){
+    if (conteudo === 'btn_add'){
         elmnt.value = parseFloat(elmnt.value) + 1
-    } else {
+    }
+
+    else {
         elmnt.value = parseFloat(elmnt.value) - 1
     }
 }
